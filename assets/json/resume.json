@@ -1,200 +1,279 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Mark Ugalino",
+    "label": "Graduate Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "ugalino@umd.edu",
+    "phone": "301 405-3001",
+    "url": "https://mgugalino.github.io/mgugalino",
+    "summary": "A Filipino computational astrophysicist who specialize in large-scale simulations of astrophysical systems like galaxies and stellar explosions",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "4296 Stadium Drive",
+      "postalCode": "MD 20742-2421",
+      "city": "College Park",
       "countryCode": "US",
-      "region": "California"
+      "region": "Maryland"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "MarkCXLV",
+        "url": "https://twitter.com/MarkCXLV"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Maryland",
+      "location": "College Park, MD",
+      "url": "https://astro.umd.edu/",
+      "area": "Computational astrophysics",
+      "studyType": "PhD Astronomy",
+      "startDate": "2023-08-28",
+      "endDate": "present",
+      "courses": []
+    },
+    {
+      "institution": "University of Massachusetts Dartmouth",
+      "location": "North Dartmouth, MA",
+      "url": "https://www.umassd.edu/",
+      "area": "Computational astrophysics",
+      "studyType": "MS Physics",
+      "startDate": "2021-01-01",
+      "endDate": "2023-05-31",
+      "courses": []
+    },
+    {
+      "institution": "University of Philippines Diliman",
+      "location": "Quezon City, PHL",
+      "url": "https://upd.edu.ph/",
+      "area": "Theoretical astrophysics",
+      "studyType": "MS Physics",
+      "startDate": "2018-09-01",
+      "endDate": "2020-07-31",
+      "courses": []
+    },
+    {
+      "institution": "University of Philippines Diliman",
+      "location": "Quezon City, PHL",
+      "url": "https://upd.edu.ph/",
+      "area": "Theoretical astrophysics",
+      "studyType": "BS Physics",
+      "startDate": "2013-06-01",
+      "endDate": "2018-05-31",
+      "courses": []
+    }
+  ],
+  "work": [
+    {
+      "name": "University of Maryland",
+      "position": "Graduate Research Assistant",
+      "url": "https://www.astro.umd.edu/people/ugalino.html",
+      "startDate": "2024-01-01",
+      "endDate": "present",
+      "summary": "I work as a graduate research assistant with Prof Benedikt Diemer. As a graduate RA, I run and analyze magnetohydrodynamical simulations of galaxies to investigate the role of magnetic fields in galaxy formation and evolution.",
+      "highlights": []
+    },
+    {
+      "name": "University of Maryland",
+      "position": "Graduate Dean's Fellow",
+      "url": "https://www.astro.umd.edu/people/ugalino.html",
+      "startDate": "2024-01-01",
+      "endDate": "2024-05-31",
+      "summary": "Graduate fellowship awarded as part of admission to University of Maryland's Astronomy department",
+      "highlights": []
+    },
+    {
+      "name": "University of Maryland",
+      "position": "Graduate Teaching Assistant",
+      "url": "https://www.astro.umd.edu/people/ugalino.html",
+      "startDate": "2023-08-01",
+      "endDate": "2023-12-31",
+      "summary": "Teaching assistant for Prof. Lee Mundy's ASTR 101 (Fall 2024) ",
+      "highlights": ["Led weekly discussions with a non-technical audience on foundations of astronomy and astrophysics", "Supervised and graded laboratory work of a class with 20 students at a time"]
+    },
+    {
+      "name": "Los Alamos National Laboratory",
+      "position": "Graduate Research Assistant",
+      "url": "http://lanl.github.io/cdss/",
+      "startDate": "2023-06-01",
+      "endDate": "2023-08-31",
+      "summary": "Participant during the 2023 installment of the LANL Co-Design Summer School (est. 2011, http://lanl.github.io/cdss/) where we developed a performance portable code for thermonuclear supernovae",
+      "highlights": []
+    },
+    {
+      "name": "University of Massachusetts Dartmouth",
+      "position": "Teaching Fellow",
+      "url": "",
+      "startDate": "2022-09-01",
+      "endDate": "2023-05-31",
+      "summary": "",
+      "highlights": ["Designed (as Instructor on Record) an introduction to astronomy course for a non-technical audience, with topics ranging from history, stellar evolution, galaxies, cosmology and indigenous astronomy","Graded exams and class output designed to synthesize lectures delivered in class."]
+    },
+    {
+      "name": "University of Massachusetts Dartmouth",
+      "position": "Graduate Research Assistant",
+      "url": "https://sites.google.com/site/fishercompgroup/people?authuser=0",
+      "startDate": "2021-05-01",
+      "endDate": "2022-08-31",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "University of Massachusetts Dartmouth",
+      "position": "Graduate Teaching Assistant",
+      "url": "",
+      "startDate": "2021-01-01",
+      "endDate": "2021-05-31",
+      "summary": "",
+      "highlights": ["Taught online recitation and laboratory courses in Classical Mechanics"]
+    },
+    {
+      "name": "University of the Philippines Diliman",
+      "position": "Instructor",
+      "url": "",
+      "startDate": "2018-08-01",
+      "endDate": "2020-12-31",
+      "summary": "",
+      "highlights": ["Taught in-person and online lectures and laboratory classes in Classical Mechanics, Electromagnetism, Physical Electronics, and Computational Physics", "Designed exams and in-class exercises for introduction to classical mechanics and electromagnetism classes", "Co-organized events for the department, served as course group leader for electromagnetism labs"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Graduate Dean's Fellowship",
+      "date": "2023-08-01",
+      "awarder": "University of Maryland",
+      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/"
+    },
+    {
+      "title": "NASA FINESST Research Grant (declined)",
+      "date": "2023-07-12",
+      "awarder": "National Aeroneutics and Space Administration",
+      "summary": "Among 27 selected from 267 proposals during the ROSES22 cycle to receive a competitive research grant worth USD 148,826.00 for the project 'Type Ia supernovae from magnetized double degenerate white dwarf mergers'"
+    },
+    {
+      "title": "Chancellor's Centennial Engineering Scholarship",
+      "date": "2023-05-01",
+      "awarder": "University of Massachusetts Dartmouth"
+    },
+    {
+      "title": "Graduate Research Award",
+      "date": "2022-04-01",
+      "awarder": "University of Massachusetts Dartmouth"
+    },
+    {
+      "title": "DAP Travel Grant",
+      "date": "2022-02-01",
+      "awarder": "American Physical Society Division of Astrophysics",
+      "summary": "Travel grant awarded to support graduate students and postdocs presenting in the APS April 2022 meeting"
+    },
+    {
+      "title": "FIP Distinguished Student Award",
+      "date": "2022-02-01",
+      "awarder": "American Physical Society Forum on International Physics",
+      "summary": "Award conferred to a select group of international students who will participate in the April APS 2022 meeting"
+    },
+    {
+      "title": "Gawad Direktor para sa Natatanging Bagong Guro",
+      "date": "2018-12-01",
+      "awarder": "National Institute of Physics, UP Diliman ",
+      "summary": "Award conferred to a select group of international students who will participate in the April APS 2022 meeting"
+    },
+    {
+      "title": "Gawad Direktor para sa Natatanging Discussion Teacher",
+      "date": "2018-12-01",
+      "awarder": "National Institute of Physics, UP Diliman ",
+      "summary": "Award conferred to a select group of international students who will participate in the April APS 2022 meeting"
     }
   ],
-  "certificates": [
+  "volunteer": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "organization": "UMD GRAD-MAP",
+      "location": "College Park, MD",
+      "position": "Co-Lead / Social Media Coordinator",
+      "url": "https://www.umdgradmap.org",
+      "startDate": "2023-09-01",
+      "endDate": "present",
+      "summary": "",
+      "highlights": ["Organized Journal Clubs led by our summer scholars, provided feedback and moderated each session", " Developed our website at umd-gradmap.github.io using Jekyll","Moderated and created content for our social media accounts on X and LinkedIn", "Moderated a professional skills workshop on how to give elevator pitches"]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "organization": "Samahang Pisika ng Pilipinas",
+      "location": "Quezon City, PHL",
+      "position": "Referee",
+      "url": "https://spp-online.org/",
+      "startDate": "2019-04-01",
+      "endDate": "present",
+      "summary": "Reviewed scientific articles submitted to the Samahang Pisika ng Pilipinas for its annual international conference on different fields of Physics, e.g. theoretical physics.",
+      "highlights": []
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "organization": "Handuhay Newsletter",
+      "location": "Quezon City, PHL",
+      "position": "Features Writer",
+      "url": "http://www.parishoftheholysacrifice.ph/handuhay/",
+      "startDate": "2017-10-01",
+      "endDate": "2018-12-31",
+      "summary": "Wrote feature articles regarding the activities of the Parish of the Holy Sacrifice, and participated in volunteer work involving photography and planning.",
+      "highlights": []
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Using 44Ti Emission to Differentiate Between Thermonuclear Supernova Progenitors",
+      "publisher": "Monthly Notices of the Royal Astronomical Society",
+      "releaseDate": "2022-11-28",
+      "url": "https://academic.oup.com/mnrasl/article/519/1/L74/6849990?login=false"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Steady-state density perturbations induced by a point mass in a finite cylinder",
+      "publisher": "Proceedings of the Samahang Pisika ng Pilipinas",
+      "releaseDate": "2020-09-11",
+      "url": "https://proceedings.spp-online.org/article/view/SPP-2020-1E-04"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Density perturbations in a collisional fluid induced by a particle on a slightly-eccentric orbit",
+      "publisher": "Proceedings of the Samahang Pisika ng Pilipinas",
+      "releaseDate": "2018-05-28",
+      "url": "https://proceedings.spp-online.org/article/view/SPP-2018-PB-35"
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
+      "language": "Filipino",
       "fluency": "Fluent",
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Professor Benedikt Diemer",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "url": "https://www.benediktdiemer.com",
+      "reference": "Assistant Professor of Astronomy, University of Maryland"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
+      "name": "Professor Robert Fisher",
+      "icon": "fa-solid fa-laptop",
+      "url": "https://www.novastella.org",
+      "reference": "Professor of Physics, University of Massachusetts Dartmouth"
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Professor Ian Vega",
+      "icon": "fa-solid fa-laptop",
+      "url": "https://gravity-nip.github.io/",
+      "reference": "Professor of Physics, University of the Philippines Diliman"
+    },
+    {
+      "name": "Professor Bo Dong",
+      "icon": "fa-solid fa-laptop",
+      "url": "https://www.umassd.edu/directory/bdong/",
+      "reference": "Associate Professor of Mathematics, University of Massachusetts Dartmouth"
     }
   ]
 }
