@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mgugalino.github.io/sitemap.xml
+Sitemap: https://www.markivanugalino.com/sitemap.xml
