@@ -27,5 +27,5 @@ I invite you to check out the following links to...
 * ...show your support to the LGBTQ community in physics and math: [http://lgbtphysicists.org/](http://lgbtphysicists.org/), [http://lgbtmath.org/](http://lgbtmath.org/)
 * ...learn how you can promote LGBTQ inclusivity in STEM: [https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/](https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/) 
 * ...check out my recent social media takeover for Pinoy Scientists: [https://pinoyscientists.com/scientist/mark-ivan-ugalino/](https://pinoyscientists.com/scientist/mark-ivan-ugalino/)
-* ...check out GRAD-MAP, a graduate student-run REU at Maryland Astronomy: [umd-gradmap.github.io](umd-gradmap.github.io)
+* ...check out GRAD-MAP, a graduate student-run REU at Maryland Astronomy: [umd-gradmap.github.io](https://umd-gradmap.github.io)
 * ...learn more about where my career started: [https://gravity-nip.github.io/](https://gravity-nip.github.io/)
