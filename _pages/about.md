@@ -23,7 +23,7 @@ Welcome to my page! I am a Filipino astrophysicist in the Astronomy PhD program 
 
 I invite you to check out the following links to...
 
-* ...show your support for the LGBTQ community in astronomy: [https://astro-outlist.github.io/](https://pinoyscientists.com/scientist/mark-ivan-ugalino/) 
+* ...show your support for the LGBTQ community in astronomy: [https://astro-outlist.github.io/](https://astro-outlist.github.io/)
 * ...show your support for the LGBTQ community in physics and math: [http://lgbtphysicists.org/](http://lgbtphysicists.org/), [http://lgbtmath.org/](http://lgbtmath.org/)
 * ...learn how you can promote LGBTQ inclusivity in STEM: [https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/](https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/) 
 * ...check out my recent social media takeover for Pinoy Scientists: [https://pinoyscientists.com/scientist/mark-ivan-ugalino/](https://pinoyscientists.com/scientist/mark-ivan-ugalino/)
