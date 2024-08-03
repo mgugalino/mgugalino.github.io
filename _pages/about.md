@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Welcome to my page! I am a Filipino astrophysicist in the Astronomy PhD program at the University of Maryland College Park. I work with Professor Benedikt Diemer on large-scale magnetohydrodynamic simulations of galaxy formation. I previously worked with Professor Robert Fisher on large-scale simulations of type Ia supernovae at UMass Dartmouth, and Professor Ian Vega on theoretical astrophysics at the University of the Philippines Diliman. 
+Welcome to my page! I am a Filipino astrophysicist in the [Astronomy PhD program](https://www.astro.umd.edu/) at the University of Maryland College Park. I work with Professor [Benedikt Diemer](http://www.benediktdiemer.com/) on large-scale magnetohydrodynamic simulations of galaxy formation. I previously worked with Professor [Robert Fisher](https://sites.google.com/site/fishercompgroup) on large-scale simulations of type Ia supernovae at UMass Dartmouth, and Professor [Ian Vega](https://ianvega.wixsite.com/ianvega) on theoretical astrophysics at the University of the Philippines Diliman. 
 
 I invite you to check out the following links to...
 
