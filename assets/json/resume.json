@@ -220,6 +220,12 @@
   ],
   "publications": [
     {
+      "name": "Ares–Simulating Type Ia Supernovae on Heterogeneous HPC Architectures",
+      "publisher": "Association for Computing Machinery",
+      "releaseDate": "2023-09-01",
+      "url": "https://sc23.supercomputing.org/proceedings/tech_poster/poster_files/rpost180s3-file3.pdf"
+    },
+    {
       "name": "Using 44Ti Emission to Differentiate Between Thermonuclear Supernova Progenitors",
       "publisher": "Monthly Notices of the Royal Astronomical Society",
       "releaseDate": "2022-11-28",
@@ -241,12 +247,12 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
       "language": "Filipino",
-      "fluency": "Fluent",
+      "fluency": "Native speaker",
       "icon": ""
     }
   ],
