@@ -1,5 +1,31 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+---
+layout: about
+title: about
+permalink: /
+subtitle: <a href='/cv/'>CV</a>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+profile:
+  align: right
+  image: prof_pic.png
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Physical Sciences Complex</p>
+    <p> Astronomy Dept, PSC 1238 </p>
+    <p>4296 Stadium Dr</p>
+    <p>College Park, MD, USA 20740</p>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+---
+
+Welcome to my page! I am a Filipino astrophysicist in the Astronomy PhD program at the University of Maryland College Park. I work with Professor Benedikt Diemer on large-scale magnetohydrodynamic simulations of galaxy formation. I previously worked with Professor Robert Fisher on large-scale simulations of type Ia supernovae at UMass Dartmouth, and Professor Ian Vega on theoretical astrophysics at the University of the Philippines Diliman. 
+
+I invite you to check out the following links to...
+
+* ...show your support to the LGBTQ community in astronomy: [https://astro-outlist.github.io/](https://pinoyscientists.com/scientist/mark-ivan-ugalino/) 
+* ...show your support to the LGBTQ community in physics and math: [http://lgbtphysicists.org/](http://lgbtphysicists.org/), [http://lgbtmath.org/](http://lgbtmath.org/)
+* ...learn how you can promote LGBTQ inclusivity in STEM: [https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/](https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/) 
+* ...check out my recent social media takeover for Pinoy Scientists: [https://pinoyscientists.com/scientist/mark-ivan-ugalino/](https://pinoyscientists.com/scientist/mark-ivan-ugalino/)
+* ...check out GRAD-MAP, a graduate student-run REU at Maryland Astronomy: [umd-gradmap.github.io](https://umd-gradmap.github.io)
+* ...learn more about where my career started: [https://gravity-nip.github.io/](https://gravity-nip.github.io/)
