@@ -1,10 +1,351 @@
 ---
 layout: post
 title: Transforming algorithms into readable code
-date: 2025-05-31 12:00:00
+date: 2025-06-10 12:00:00
 description: 
 tags: math open-science
 categories: coding
 ---
 
+This basic guide to coding should not be used as a substitute to a full course in algorithms. However, one may find it useful for guiding newcomers who wish to learn how to write code that is useful for open science. The *openness* of science depends on many things, but one important aspect is accessibility. When you write code that could not be easily understood by the next person, you diminish its potential as a tool for future research. A good code is not measured by the number of lines it has. It is ultimately measured by how your code can be traced back to the *algorithm* that inspired it. If you can turn your code into a cookbook-like guide without spending weeks decoding it, then you have done a great job writing it. Having said this, a code with a very simple structure could also have downsides. Say, you managed to write a code that produces an output using one function `mega_function` written by some other person. Now, `mega_function` is a collection of instructions that your computer follows sequentially whenever you call it. It could be an instruction on how to compute the derivative of a function, or it could be a helper that sends you an email whenever you satisfy a trigger. If in your code, `mega_function` is defined as:
 
+```
+def mega_function(input):
+    .
+    .
+    .
+    ~ 1000 lines of code
+    .
+    .
+    .
+    return output
+```
+and you call it once in your code,
+```
+mega_function(hello)
+```
+to produce your desired output, and you suddenly encounter an error `[Error] I do not understand what you are saying`, it could be potentially hard to fix the problem. Why? Because you have 1000 lines of code to sift through. I have worked on a code structured like this and it was very hard to use because of three reasons: (1) its length, (2) its lack of discernible structure, and (3) its lack of proper documentation (more on this later). Without understanding how `mega_function` works, you are left with a code that is susceptible to unfixable bugs which could be more frustrating to deal with. Hence, *writing a code should always be driven by a clear purpose*. Who are you writing your code for? Is there any room for future development? What language works best for your desired application?
+
+The best way to reproduce a result borne out of a numerical calculation is by writing code that has clear (1) syntax, meaning how you write a code, (2) structure, meaning how you bring parts of a code into one whole unit, and (3) documentation, meaning how generous you are in leaving simple descriptions throughout your code.
+
+In the next few sections, we will go through key aspects of *responsible* coding. Others may find the concepts I raise in this guide as "too much" but these are usually the same people who end up writing code that could never be used again by humanity $$-$$ an utter waste of time and effort (views my own). My goal is to convince you that writing responsibly not only produces code that supports open science, but also improves the way you approach problems in research and potentially, *in life*.
+
+## Algorithms according to an astronomer
+If you have taken a computer science course on algorithms before, you may find this next section silly. You will see concepts that I invented, or even adopted from other fields. However, the purpose of this section is to demystify what an algorithm is and turn it into an ordinary concept that you can easily relate to. Again, coding does not have to be fancy $$-$$ it has to be easily understood. This will be our guiding principle from this point onward.
+
+### Defining a problem
+Defining a problem starts by defining the purpose of your code. The problem is often handed to you on a silver platter since it is the reason why you are writing code in the first place. Hence, your first task is to *redefine* your problem such that it can be addressed by a well-defined set of instructions. For example, if you are asked to solve an equation of the form
+$$
+x^2-2x = 8
+$$
+the first approach that you might take is to define a function that uses the quadratic formula to solve for $x$,
+```
+def quad_formula (a, b, c, mode = 'plus'):
+    """
+    Function that returns the value of x given three coefficients a, b, c
+    """
+    if mode == 'plus':
+        result = -b
+        result += sqrt(b**2 - 4*a*c)
+        result /= 2*a
+    elif mode == 'minus':
+        result = -b
+        result += -sqrt(b**2 - 4*a*c)
+        result /= 2*a
+    else:
+        raise ValueError("Unrecognized mode, choose between 'plus' or 'minus'")
+
+    return result
+```
+This is definitely a correct approach. However, this is a *very specific* way to solve this problem. You are now faced with a choice $$-$$ do you want to solve this equation exactly, like what we did above, or generalize the problem to all kinds of equations with well-defined solutions? With the help of a computer, you can do both. If your project requires you to also solve higher-order equations, it would be smarter to write a general code for any function.
+
+There are different ways to address this problem numerically. This is where a redefinition of the problem becomes very important. For simplicity, let us consider the same problem where you are required to solve for the value of $x$ in the equation
+$$
+x^2-2x = 8
+$$
+You can rearrange the terms in the equation as,
+$$
+x^2 -2x-8 = 0
+$$
+Now we have slightly shifted what the problem means. We now have a function $$f(x) = x^2 - 2x-8$$ for which we need to find a value of $x$ such that $f(x=0)=0$. This is called a root-finding problem. Luckily, people thought deeply about this problem for a long time. We shall now discuss one of the simplest ways to do it.
+
+## Selecting the best way to solve a problem
+
+It takes some experience to determine the most optimal way to solve a problem. As you learn more computational methods, you always need to determine their limitations. We will learn in a few that the methods we will discuss have their own shortfalls. Without further ado, let us consider the *brute force* and *binary search* methods for root-finding.
+
+### Brute force search
+Consider the root-finding problem we established earlier. You are tasked to find solutions of the equation
+$$
+x^2 - 2x = 8
+$$
+which we later massaged into a root-finding problem of the form,
+$$
+f(x):= x^2 -2x-8 =0
+$$
+Now, let us think of the most basic way to solve this problem. First, the function $f(x)$ is quadratic and has the following shape:
+
+```
+# Code for Python tutorial, mugalino (rev. 2025)
+# Importing a package in Python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Function definition in Python
+# Note: A Python function often has three components if written correctly.
+# It has a function name, i.e. here called "function", which takes an input
+# variable "x". Normally, to facilitate better understanding of the code,
+# the person who wrote the code would leave a comment block describing
+# what the function is meant to do. The way I wrote it here is overkill for
+# such a function, but is a good guide for more complex codes.
+
+def function(x):
+    """
+    Function that returns the value of the quadratic function
+    x^2 - 2x - 8 = f(x)
+
+    Input:
+    x - input variable [type: float]
+
+    Output:
+    f - output of function f(x) [type: float]
+
+    """
+    f = x**2 - 2*x -8
+
+    return f
+
+# Array of x values that we will use for plotting
+# Note: the linspace function in numpy generates an "array"
+# with elements that are uniformly spaced in linear space
+# i.e. the following instance of linspace samples the interval including
+# -10 and 10 with 100 points in between, with spacing (10-(-10))/100 = 0.2
+
+x = np.linspace(-10, 10, 100)
+
+# Code block for plotting with labelled axes
+# Note: matplotlib.pyplot is a commonly used plotting package in
+# Python. It derives some of its functionality from Matlab. You will learn
+# more about this in a separate lesson on handling and analysis of data.
+
+# Uncomment to show the results. You can do this by highlighting this block,
+# then click Ctrl + /
+
+# plt.plot(x, function(x), label =r'$f(x)=x^2 -2x-8$')
+# plt.xlabel('x (arbitrary units)')
+# plt.ylabel('y (arbitrary units)')
+# plt.vlines(0.0, np.min(function(x)), np.max(function(x)),
+#            linestyle = '--', color = 'black')
+# plt.hlines(0.0, np.min(x), np.max(x),
+#            linestyle = '--', color = 'black')
+# plt.legend()
+# plt.show()
+```
+
+By visually inspecting the shape of the curve, you will notice that the function crosses the x-axis ($$y=0$$ line) twice, indicating that we have two roots (or two well-defined solutions to the equation $$x^2-2x=8$$). However, imagine that we are coming in blind and have to find the roots. What should we do?
+
+To help us come up with a solution, let us think about information that is available to us. First, we can compute the values of the function using the `function` code we wrote a while ago. We can do a brute force search by going from a minimum value of $x$ to a maximum and evaluate the function for every value of $x$. Once we cross the x-axis (`function` returned a positive value after negative evaluations, vice versa), we know that we either have found a root or just passed by a root. Let us write this procedure as a set of instructions.
+
+1. Determine an interval where we want to search for a root. This involves defining a minimum and maximum value of $$x$$.
+2. Decide how many discrete points between the minimum and maximum values of $$x$$ we want to sample. This would mean that our calculation scales as the number $$N_\mathrm{sample}$$.
+3. Evaluate the value of the function $$f(x)$$ for every $$x$$ between $$x_\mathrm{min}$$ and $$x_\mathrm{max}$$.
+4. For every $$i$$-th evaluation, check whether $$f(x_i)=0$$ or some tolerance value $$\epsilon$$ where $$\epsilon$$ is very close to zero, e.g. $$10^{-20}$$.
+5. If not, we compare the signs of $$f(x_i)$$ and $$f(x_{i-1})$$ and check if they are different.
+6. If signs are different, we have crossed the x-axis. We set $$x_i$$ and $$x_{i-1}$$ to be our new $$x_{max}$$ and $$x_{min}$$.
+7. We restart the procedure until we satisfy step 4.
+
+Let us see this in action. When you run the code block below, notice how many steps it takes to finish and study the code structure. I left comments for you to decode what each part of the code does.
+
+```
+def brute_force_solve(function, xmin_init, xmax_init, number_samples,
+                      tolerance=1e-5,
+                      max_iterations=1000):
+    """
+    Brute force root-finding algorithm that iteratively refines the interval.
+
+    Parameters:
+    - function: the function f(x) whose root we are searching
+    - xmin_init: initial lower bound of search interval
+    - xmax_init: initial upper bound of search interval
+    - number_samples: number of points to sample between xmin and xmax
+    - tolerance: acceptable absolute value for f(x) to be considered a root
+    - max_iterations: safeguard to avoid infinite loops
+
+    Returns:
+    - root: estimated root value
+    """
+    xmin = xmin_init
+    xmax = xmax_init
+
+    for iteration in range(max_iterations):
+        print(f"\n--- Iteration {iteration + 1} ---")
+
+        # Step 1: Define current search interval
+        print(f"[Step 1] Current search interval: xmin = {xmin}, xmax = {xmax}")
+
+        # Step 2: Set number of discrete samples
+        print(f"[Step 2] Sampling {number_samples} points uniformly between xmin and xmax")
+
+        # Step 3: Evaluate function
+        x_vals = np.linspace(xmin, xmax, number_samples)
+        f_vals = function(x_vals)
+        print(f"[Step 3] Sampled function values at {number_samples} x-values")
+
+        # Step 4-5: Check for zero (or close to zero) and sign change
+        for i in range(1, number_samples):
+            print(f"[Step 4] Checking x[{i}] = {x_vals[i]:.4e}, f = {f_vals[i]:.4e}")
+
+            if abs(f_vals[i]) < tolerance:
+                print(f"[Step 4] Found root within tolerance: x = {x_vals[i]:.4e}, f = {f_vals[i]:.4e}")
+                return x_vals[i]
+
+            # Step 5: Check for sign change
+            if np.sign(f_vals[i]) != np.sign(f_vals[i - 1]):
+                print(f"[Step 5] Sign change detected between x[{i-1}] = {x_vals[i-1]:.4e}, x[{i}] = {x_vals[i]:.4e}")
+
+                # Step 6: Narrow the interval
+                xmin = x_vals[i - 1]
+                xmax = x_vals[i]
+                print(f"[Step 6] Refining interval: new xmin = {xmin:.4e}, new xmax = {xmax:.4e}")
+
+                # Step 7: Restart
+                print(f"[Step 7] Restarting search with refined interval...\n")
+                break
+        else:
+            print("No sign change detected across sampled points.")
+            raise ValueError("No root found in the given interval.")
+
+    raise RuntimeError("Maximum iterations reached without satisfying the tolerance.")
+```
+
+```
+# Try to find the roots of the function by feeding the function xmin and xmax and number_samples
+
+root1 = brute_force_solve(function, , , ,)
+print(f"Root 1: {root1:.20f}")
+
+root2 = brute_force_solve(function, , , ,)
+print(f"Root 2: {root2:.20f}")
+```
+
+### Binary search or bisection
+While a brute force search is not hard to implement and is clearly effective, there is a better way to find roots. A binary search is a fast and efficient algorithm for finding a target value within a sorted list or interval. It works by repeatedly dividing the search interval in half, eliminating half of the remaining possibilities at each step.
+
+To perform a binary search, you need to determine an initial minimum and maximum value in your search interval as we did before. However, instead of searching through $$[x_\mathrm{min}, x_\mathrm{max}]$$ one-by-one, we evaluate the function at the midpoint
+$$
+x_\mathrm{mid} = \frac{x_\mathrm{max} - x_\mathrm{min}}{2}
+$$
+and check whether it's a root or not. If it is a root, we terminate the search and return the $$x$$ value. If not, we have to check whether the sign of the function at the midpoint is the same as that of the function at either ends of the search interval.
+
+Let us summarize these steps:
+1. Define the initial interval. Choose two points $x_{\text{min}}$ and $x_{\text{max}}$ such that:
+$$
+f(x_{\text{min}}) \cdot f(x_{\text{max}}) < 0
+$$
+This guarantees that a root lies within the interval by the Intermediate Value Theorem.
+
+2. Compute the midpoint. Calculate:
+$$
+x_{\text{mid}} = \frac{x_{\text{min}} + x_{\text{max}}}{2}
+$$
+and evaluate $$f(x_{\text{mid}})$$.
+
+3. Check for convergence. If:
+$$
+|f(x_{\text{mid}})| < \varepsilon
+$$
+then $$x_{\text{mid}}$$ is an approximate root, where $$\varepsilon$$ is a small tolerance value.
+
+4. Update the interval. Decide which subinterval contains the root:
+  * If $$\text{sign}(f(x_{\text{mid}})) = \text{sign}(f(x_\text{min}))$$, set:
+  $$
+  x_{\text{min}} = x_{\text{mid}}
+  $$
+  * Otherwise, set:
+  $$
+  x_{\text{max}} = x_{\text{mid}}
+  $$
+
+5. Repeat steps 2--4 until either:
+  * $$
+|f(x_{\text{mid}})| < \varepsilon
+$$, or
+  * The interval $$[x_{\text{min}}, x_{\text{max}}]$$ is sufficiently small.
+  
+```
+def binary_search_solve(function, x_min, x_max,
+                        tolerance=1.e-10, max_iterations=1000):
+    """
+    Binary search (bisection method) for finding a root of a continuous function.
+    Prints step-by-step output for every iteration.
+
+    Parameters:
+    - function: callable, the function f(x)
+    - x_min: float, lower bound of the interval
+    - x_max: float, upper bound of the interval
+    - tolerance: float, acceptable tolerance for convergence
+    - max_iterations: int, maximum allowed iterations
+
+    Returns:
+    - x_root: float, estimated root location
+    """
+
+    print("***********************************************")
+    print(f"Searching for root between {x_min} and {x_max}")
+    print("***********************************************")
+    print("[Step 1] Define initial interval:")
+    print(f"  x_min = {x_min:.4e}, x_max = {x_max:.4e}")
+
+    f_min = function(x_min)
+    f_max = function(x_max)
+
+    print(f"  f(x_min) = {f_min:.4e}, f(x_max) = {f_max:.4e}")
+
+    for iteration in range(max_iterations):
+        print(f"\n--- Iteration {iteration + 1} ---")
+
+        # Step 2: Compute midpoint
+        x_mid = 0.5 * (x_min + x_max)
+        f_mid = function(x_mid)
+
+        print("[Step 2] Compute midpoint:")
+        print(f"  x_mid = (x_min + x_max) / 2 = {x_mid:.4e}")
+        print(f"  f(x_min) = {f_min:.4e}, f(x_mid) = {f_mid:.4e}, f(x_max) = {f_max:.4e}")
+
+        # Step 3: Check convergence
+        print("[Step 3] Check convergence:")
+        if np.abs(f_mid) < tolerance:
+            print(f"  |f(x_mid)| = {np.abs(f_mid):.4e} < tolerance {tolerance:.4e}, Converged")
+            return x_mid
+        elif np.abs(x_max - x_min) < tolerance:
+            print(f"  |x_max - x_min| = {np.abs(x_max - x_min):.4e} < tolerance, Interval small enough, Converged")
+            return x_mid
+        else:
+            print(f"  Not yet converged, proceed to Step 4")
+
+        # Step 4: Update interval using sign of f(x)
+        print("[Step 4] Update the interval:")
+        if np.sign(f_mid) != np.sign(f_min):
+            print("  sign(f(x_mid)) not equal to sign(f(x_min)), update x_max = x_mid")
+            x_max = x_mid
+            f_max = f_mid
+        else:
+            print("  sign(f(x_mid)) = sign(f(x_min)), update x_min = x_mid")
+            x_min = x_mid
+            f_min = f_mid
+
+    raise RuntimeError("Maximum number of iterations reached without convergence.")
+```
+
+### Defining the limitations of your method
+Now, that we have looked at each code and have tested them for root-finding. I want you to check and see if it always works. In pairs, I want you to discuss for 5 minutes ways in which these codes could fail. After 5 minutes, we will convene again and discuss. To guide your conversation, try to answer the following questions:
+
+1. In which instances can the brute force method fail? the bisection / binary search method?
+2. In our example, we tested the methods on a simple quadratic function. Could you think of funky looking functions where these search methods could fail?
+3. Looking at the numerical aspect of these methods, what do you think should we consider when choosing which method to use for our application?
+4. *Optional*. Can you find all roots of the function? How?
+
+After you have discussed and listed down answers to the questions above, try to add steps in the algorithms we defined for each method previously. 
+
+As the final exercise for this lesson, let us try to transform your revised algorithm into code. Rewrite both functions by adding new steps. Make sure to include a comment wherever you added a new line of code. Briefly describe what the line or block does.
+
+In the next blog, we will discuss how we can optimize code structure by writing it in a modular fashion.
