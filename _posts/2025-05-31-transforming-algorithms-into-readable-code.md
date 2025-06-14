@@ -59,7 +59,7 @@ def quad_formula (a, b, c, mode = 'plus'):
 ```
 This is definitely a correct approach. However, this is a *very specific* way to solve this problem. You are now faced with a choice $$-$$ do you want to solve this equation exactly, like what we did above, or generalize the problem to all kinds of equations with well-defined solutions? With the help of a computer, you can do both. If your project requires you to also solve higher-order equations, it would be smarter to write a general code for any function.
 
-There are different ways to address this problem numerically. This is where a redefinition of the problem becomes very important. For simplicity, let us consider the same problem where you are required to solve for the value of $x$ in the equation
+There are different ways to address this problem numerically. This is where a redefinition of the problem becomes very important. For simplicity, let us consider the same problem where you are required to solve for the value of $$x$$ in the equation
 $$
 x^2-2x = 8
 $$
@@ -67,7 +67,7 @@ You can rearrange the terms in the equation as,
 $$
 x^2 -2x-8 = 0
 $$
-Now we have slightly shifted what the problem means. We now have a function $$f(x) = x^2 - 2x-8$$ for which we need to find a value of $x$ such that $f(x=0)=0$. This is called a root-finding problem. Luckily, people thought deeply about this problem for a long time. We shall now discuss one of the simplest ways to do it.
+Now we have slightly shifted what the problem means. We now have a function $$f(x) = x^2 - 2x-8$$ for which we need to find a value of $$x$$ such that $$f(x=0)=0$$. This is called a root-finding problem. Luckily, people thought deeply about this problem for a long time. We shall now discuss one of the simplest ways to do it.
 
 ## Selecting the best way to solve a problem
 
@@ -82,7 +82,7 @@ which we later massaged into a root-finding problem of the form,
 $$
 f(x):= x^2 -2x-8 =0
 $$
-Now, let us think of the most basic way to solve this problem. First, the function $f(x)$ is quadratic and has the following shape:
+Now, let us think of the most basic way to solve this problem. First, the function $$f(x)$$ is quadratic and has the following shape:
 
 ```
 # Code for Python tutorial, mugalino (rev. 2025)
@@ -143,7 +143,7 @@ x = np.linspace(-10, 10, 100)
 
 By visually inspecting the shape of the curve, you will notice that the function crosses the x-axis ($$y=0$$ line) twice, indicating that we have two roots (or two well-defined solutions to the equation $$x^2-2x=8$$). However, imagine that we are coming in blind and have to find the roots. What should we do?
 
-To help us come up with a solution, let us think about information that is available to us. First, we can compute the values of the function using the `function` code we wrote a while ago. We can do a brute force search by going from a minimum value of $x$ to a maximum and evaluate the function for every value of $x$. Once we cross the x-axis (`function` returned a positive value after negative evaluations, vice versa), we know that we either have found a root or just passed by a root. Let us write this procedure as a set of instructions.
+To help us come up with a solution, let us think about information that is available to us. First, we can compute the values of the function using the `function` code we wrote a while ago. We can do a brute force search by going from a minimum value of $$x$$ to a maximum and evaluate the function for every value of $$x$$. Once we cross the x-axis (`function` returned a positive value after negative evaluations, vice versa), we know that we either have found a root or just passed by a root. Let us write this procedure as a set of instructions.
 
 1. Determine an interval where we want to search for a root. This involves defining a minimum and maximum value of $$x$$.
 2. Decide how many discrete points between the minimum and maximum values of $$x$$ we want to sample. This would mean that our calculation scales as the number $$N_\mathrm{sample}$$.
@@ -237,7 +237,7 @@ $$
 and check whether it's a root or not. If it is a root, we terminate the search and return the $$x$$ value. If not, we have to check whether the sign of the function at the midpoint is the same as that of the function at either ends of the search interval.
 
 Let us summarize these steps:
-1. Define the initial interval. Choose two points $x_{\text{min}}$ and $x_{\text{max}}$ such that:
+1. Define the initial interval. Choose two points $$x_{\text{min}}$$ and $$x_{\text{max}}$$ such that:
 $$
 f(x_{\text{min}}) \cdot f(x_{\text{max}}) < 0
 $$
