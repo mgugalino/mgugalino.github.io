@@ -34,11 +34,11 @@ In the next few sections, we will go through key aspects of *responsible* coding
 If you have taken a computer science course on algorithms before, you may find this next section silly. You will see concepts that I invented, or even adopted from other fields. However, the purpose of this section is to demystify what an algorithm is and turn it into an ordinary concept that you can easily relate to. Again, coding does not have to be fancy $$-$$ it has to be easily understood. This will be our guiding principle from this point onward.
 
 ### Defining a problem
-Defining a problem starts by defining the purpose of your code. The problem is often handed to you on a silver platter since it is the reason why you are writing code in the first place. Hence, your first task is to *redefine* your problem such that it can be addressed by a well-defined set of instructions. For example, if you are asked to solve an equation of the form
+The problem is often handed to you on a silver platter since it is the reason why you are writing code in the first place. Hence, your first task is to *redefine* your problem such that it can be addressed by a well-defined set of instructions. For example, if you are asked to solve an equation of the form
 $$
 x^2-2x = 8
 $$
-the first approach that you might take is to define a function that uses the quadratic formula to solve for $x$,
+the first approach that you might take is to define a function that uses the quadratic formula to solve for $$x$$,
 ```
 def quad_formula (a, b, c, mode = 'plus'):
     """
