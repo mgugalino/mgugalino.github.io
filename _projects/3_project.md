@@ -24,3 +24,8 @@ Key contributions include:
 This work advances our understanding of how local turbulent conditions, rather than prescribed transition densities, can lead to explosive burning in near-MCh white dwarfs. The tDDT framework has significant implications for the diversity of SNe Ia and their use in precision cosmology.
 
 Future directions include higher-resolution simulations to better resolve turbulence, extended nucleosynthesis and light curve modeling, and comparisons with observational spectra of well-studied SNe Ia.
+
+### Related publications / presentations
+1. Ugalino, Mark Ivan, et al. “Turbulently‑driven Deflagration‑to‑Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Physical Society, vol. 67, no. 6, Apr. 2022 (APS April Meeting), abstract APRX13004U
+2. Ugalino, Mark Ivan, et al. “Turbulently Driven Deflagration to Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Astronomical Society, vol. 55, no. 6, 2023, p. 127. Bulletin of the AAS, https://baas.aas.org/pub/2023n6i127p03/release/1
+3. MIT Astrophysics Brown Bag Lunch talk https://spaceweb-dev.mit.edu/events/astrophysics-brown-bag-lunch-talk-1-31-2022-speakers-jan-scholtz-cambridge-university-and-mark-ivan-ugalino-umass-dartmouth/
