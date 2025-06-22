@@ -2,6 +2,7 @@
 layout: page
 title: Type Ia explosion mechanism from first principles
 description: 
+img: assets/img/ddt.png
 importance: 1
 category: Past
 related_publications: false

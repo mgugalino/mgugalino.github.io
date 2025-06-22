@@ -2,7 +2,7 @@
 layout: page
 title: Titanium 44 from type Ia supernovae
 description:
-img:
+img: assets/img/ti44.jpeg
 importance: 1
 category: Past
 related_publications: false
@@ -17,4 +17,4 @@ By analyzing light curves of both Type Ia supernovae and calcium-rich transients
 The study underscores the potential of $${}^{44}\mathrm{Ti}$$ as a powerful observational tracer and advocates for future high-sensitivity gamma-ray missions to better constrain the origins of SNe Ia. This work not only informs supernova progenitor models but also has implications for understanding the Galactic distribution of positrons and the source of the 511 keV annihilation line.
 
 ### Related publications / presentations
-1. Kosakowski, **Ugalino** et al. “Using $${}^{44}\mathrm{Ti}$$ Emission to Differentiate Between Thermonuclear Supernova Progenitors.” Monthly Notices of the Royal Astronomical Society: Letters, vol. 519, no. 1, 2023, pp. L74–L78. Oxford Academic, doi:10.1093/mnrasl/slac152
+1. Kosakowski, **Ugalino** et al. “Using $${}^{44}\mathrm{Ti}$$ Emission to Differentiate Between Thermonuclear Supernova Progenitors.” Monthly Notices of the Royal Astronomical Society: Letters, vol. 519, no. 1, 2023, pp. L74–L78. Oxford Academic, [doi:10.1093/mnrasl/slac152](https://academic.oup.com/mnrasl/article/519/1/L74/6849990)

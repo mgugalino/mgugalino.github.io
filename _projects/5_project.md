@@ -2,7 +2,7 @@
 layout: page
 title: Dynamical friction
 description:
-img:
+img: assets/img/density_perts2.jpg
 importance: 1
 category: Past
 related_publications: false
