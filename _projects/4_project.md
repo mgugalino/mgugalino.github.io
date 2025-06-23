@@ -1,20 +1,34 @@
 ---
 layout: page
-title: Titanium 44 from type Ia supernovae
-description:
-img: assets/img/ti44.jpeg
+title: Type Ia explosion mechanism from first principles
+description: 
+img: assets/img/ddt.png
 importance: 1
 category: Past
 related_publications: false
 ---
 
-Understanding the origins of Type Ia supernovae (SNe Ia) remains a key challenge in astrophysics. These cosmic explosions are vital for measuring cosmic distances and enriching the universe with heavy elements — but the exact nature of their progenitors is still debated. In this study, we investigate the role of the radioactive isotope titanium-44 ($${}^{44}\mathrm{Ti}$$) as a diagnostic tool to distinguish between different explosion scenarios.
+Type Ia supernovae (SNe Ia) are powerful thermonuclear explosions of white dwarfs used as standardizable candles in cosmology. While their importance in constraining dark energy is well established, the exact physical mechanism behind their explosions remains unresolved. This thesis presents the first application of a laboratory-validated, turbulently driven deflagration-to-detonation transition (tDDT) model to full-star three-dimensional simulations of near-Chandrasekhar mass white dwarfs using the FLASH hydrodynamics code.
 
-The production of $${}^{44}\mathrm{Ti}$$ occurs primarily through explosive helium burning, a process that varies depending on the nature of the progenitor system. Models involving merging white dwarfs (so-called double-degenerate systems) are predicted to produce significantly more $${}^{44}\mathrm{Ti}$$ than single-degenerate or near-Chandrasekhar mass explosions. We demonstrate that the amount and timing of $${}^{44}\mathrm{Ti}$$ emission — especially at late times after a supernova — can help identify the progenitor pathway.
+The study investigates how turbulent flame interactions in white dwarf interiors can lead to spontaneous detonations without requiring artificial input parameters. By implementing a new subgrid-scale tDDT criterion based on local turbulence properties, the simulations capture how Rayleigh-Taylor-driven flame instabilities evolve into Kolmogorov turbulence—triggering self-consistent detonation once critical turbulent intensities are reached.
 
-By analyzing light curves of both Type Ia supernovae and calcium-rich transients (a related class of explosions), we show that some events transition to being dominated by energy from $${}^{44}\mathrm{Ti}$$ decay within a few years. This contrasts with slower transitions seen in explosions from near-Chandrasekhar mass progenitors. Gamma-ray observations of supernova remnants like **Tycho**, **Kepler**, and **G1.9+0.3** are also examined to assess consistency with different theoretical models.
+Key contributions include:
 
-The study underscores the potential of $${}^{44}\mathrm{Ti}$$ as a powerful observational tracer and advocates for future high-sensitivity gamma-ray missions to better constrain the origins of SNe Ia. This work not only informs supernova progenitor models but also has implications for understanding the Galactic distribution of positrons and the source of the 511 keV annihilation line.
+* Development and integration of a new FLASH module that monitors local flame conditions to identify tDDT events.
+
+* Full-star 3D simulations across varying white dwarf central densities and ignition geometries.
+
+* Statistical analysis of turbulence using 3D Fourier spectra to track flame evolution and verify onset of the inertial range.
+
+* Nucleosynthetic yield calculations using a 489-isotope reaction network, showing that prompt detonations via tDDT can produce higher-than-expected $${}^{56}$$Ni masses ($$\sim 0.88~M_\odot$$), potentially explaining overluminous SNe Ia (e.g., 91T-like events).
+
+This work advances our understanding of how local turbulent conditions, rather than prescribed transition densities, can lead to explosive burning in near-MCh white dwarfs. The tDDT framework has significant implications for the diversity of SNe Ia and their use in precision cosmology.
+
+Future directions include higher-resolution simulations to better resolve turbulence, extended nucleosynthesis and light curve modeling, and comparisons with observational spectra of well-studied SNe Ia.
+
+[Link to progress report / Masters thesis](https://repository.lib.umassd.edu/esploro/outputs/graduate/Turbulently-driven-deflagration-to-detonation-transition-in-near-Chandrasekhar/9914424800801301) 
 
 ### Related publications / presentations
-1. Kosakowski, **Ugalino** et al. “Using $${}^{44}\mathrm{Ti}$$ Emission to Differentiate Between Thermonuclear Supernova Progenitors.” Monthly Notices of the Royal Astronomical Society: Letters, vol. 519, no. 1, 2023, pp. L74–L78. Oxford Academic, [doi:10.1093/mnrasl/slac152](https://academic.oup.com/mnrasl/article/519/1/L74/6849990)
+1. Ugalino, Mark Ivan, et al. “Turbulently‑driven Deflagration‑to‑Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Physical Society, vol. 67, no. 6, Apr. 2022 (APS April Meeting), abstract APRX13004U
+2. Ugalino, Mark Ivan, et al. “Turbulently Driven Deflagration to Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Astronomical Society, vol. 55, no. 6, 2023, p. 127. Bulletin of the AAS, https://baas.aas.org/pub/2023n6i127p03/release/1
+3. MIT Astrophysics Brown Bag Lunch talk https://spaceweb-dev.mit.edu/events/astrophysics-brown-bag-lunch-talk-1-31-2022-speakers-jan-scholtz-cambridge-university-and-mark-ivan-ugalino-umass-dartmouth/

@@ -1,34 +1,18 @@
 ---
 layout: page
-title: Type Ia explosion mechanism from first principles
+title: Performance portable code for simulations of type Ia supernovae
 description: 
-img: assets/img/ddt.png
+img: assets/img/ares.png
 importance: 1
 category: Past
 related_publications: false
 ---
 
-Type Ia supernovae (SNe Ia) are powerful thermonuclear explosions of white dwarfs used as standardizable candles in cosmology. While their importance in constraining dark energy is well established, the exact physical mechanism behind their explosions remains unresolved. This thesis presents the first application of a laboratory-validated, turbulently driven deflagration-to-detonation transition (tDDT) model to full-star three-dimensional simulations of near-Chandrasekhar mass white dwarfs using the FLASH hydrodynamics code.
+Ares (Github: [https://github.com/lanl/AresPK](https://github.com/lanl/AresPK)) is a high-performance, performance-portable simulation code developed to model the complex physics of Type Ia supernovae on modern heterogeneous computing architectures. Built on the Parthenon-Hydro adaptive mesh refinement (AMR) framework and leveraging the Kokkos programming model, Ares can run efficiently across diverse CPU and GPU platforms. It includes critical physical components such as a nuclear statistical equilibrium (NSE) solver, a degenerate equation of state, and a monopole gravity solver, enabling realistic modeling of thermonuclear burning in white dwarfs.
 
-The study investigates how turbulent flame interactions in white dwarf interiors can lead to spontaneous detonations without requiring artificial input parameters. By implementing a new subgrid-scale tDDT criterion based on local turbulence properties, the simulations capture how Rayleigh-Taylor-driven flame instabilities evolve into Kolmogorov turbulence—triggering self-consistent detonation once critical turbulent intensities are reached.
+In benchmark tests on LANL’s Chicoma system, Ares demonstrated excellent scalability and performance. GPU-enabled runs achieved nearly ideal strong scaling and outperformed CPU-only configurations by around 50% per rank, maintaining high efficiency even across 64 GPUs. These results show that Ares is well-positioned for use on current and future high-performance computing systems. The project lays the groundwork for future full 3D simulations of supernovae and highlights the importance of performance-portable, modular code design in computational astrophysics.
 
-Key contributions include:
-
-* Development and integration of a new FLASH module that monitors local flame conditions to identify tDDT events.
-
-* Full-star 3D simulations across varying white dwarf central densities and ignition geometries.
-
-* Statistical analysis of turbulence using 3D Fourier spectra to track flame evolution and verify onset of the inertial range.
-
-* Nucleosynthetic yield calculations using a 489-isotope reaction network, showing that prompt detonations via tDDT can produce higher-than-expected $${}^{56}$$Ni masses ($$\sim 0.88~M_\odot$$), potentially explaining overluminous SNe Ia (e.g., 91T-like events).
-
-This work advances our understanding of how local turbulent conditions, rather than prescribed transition densities, can lead to explosive burning in near-MCh white dwarfs. The tDDT framework has significant implications for the diversity of SNe Ia and their use in precision cosmology.
-
-Future directions include higher-resolution simulations to better resolve turbulence, extended nucleosynthesis and light curve modeling, and comparisons with observational spectra of well-studied SNe Ia.
-
-[Link to progress report / Masters thesis](https://repository.lib.umassd.edu/esploro/outputs/graduate/Turbulently-driven-deflagration-to-detonation-transition-in-near-Chandrasekhar/9914424800801301) 
+This project was developed as part of the [Co-Design Summer School](https://lanl.github.io/cdss/) (consider applying, it was a really fun experience!) at Los Alamos National Laboratory, under the supervision of Julien Loiseau and Hyun Lim. (LA-UR-23-29154)
 
 ### Related publications / presentations
-1. Ugalino, Mark Ivan, et al. “Turbulently‑driven Deflagration‑to‑Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Physical Society, vol. 67, no. 6, Apr. 2022 (APS April Meeting), abstract APRX13004U
-2. Ugalino, Mark Ivan, et al. “Turbulently Driven Deflagration to Detonation Transition in Near‑Chandrasekhar Mass White Dwarfs.” Bulletin of the American Astronomical Society, vol. 55, no. 6, 2023, p. 127. Bulletin of the AAS, https://baas.aas.org/pub/2023n6i127p03/release/1
-3. MIT Astrophysics Brown Bag Lunch talk https://spaceweb-dev.mit.edu/events/astrophysics-brown-bag-lunch-talk-1-31-2022-speakers-jan-scholtz-cambridge-university-and-mark-ivan-ugalino-umass-dartmouth/
+1. Landon Dyken, Alexander Holas, Mark Ivan Ugalino, and Md Nageeb Bin Zaman. 2023. "Ares – Simulating Type Ia Supernovae on Heterogeneous HPC Architectures" ([LA-UR-23-29154](https://sc23.supercomputing.org/proceedings/tech_poster/poster_files/rpost180s3-file3.pdf)) The International Conference for High Performance Computing, Networking, Storage, and Analysis (September 2023)
