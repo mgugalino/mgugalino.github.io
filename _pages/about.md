@@ -29,3 +29,40 @@ I invite you to check out the following links to...
 * ...show your support for the queer community in astronomy: [https://astro-outlist.github.io/](https://astro-outlist.github.io/)
 * ...show your support for the queer community in physics and math: [http://lgbtphysicists.org/](http://lgbtphysicists.org/), [http://lgbtmath.org/](http://lgbtmath.org/)
 * ...learn how you can promote LGBTQ+ inclusivity in STEM: [https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/](https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/) 
+
+<div style="display: flex; align-items: center; margin: 60px 0 40px 10px;">
+  <!-- Left text -->
+  <div style="margin-right: 20px; transform: translateY(-10px);">
+    <p style="margin: 0;"><b>Research institutions I was or currently affiliated to:</b></p>
+  </div>
+
+  <!-- Logos -->
+  <div style="display: flex; gap: 10px;">
+    <!-- Logo 1 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="assets/img/1.png" alt="Logo 1" width="100"/>
+      <div style="height: 16px;"></div> <!-- empty space to match caption height -->
+    </div>
+
+    <!-- Logo 2 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="assets/img/2.png" alt="Logo 2" width="100"/>
+      <div style="height: 16px;"></div>
+    </div>
+
+    <!-- Logo 3 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="assets/img/3.png" alt="Logo 3" width="100"/>
+      <div style="height: 16px;"></div>
+    </div>
+
+    <!-- Logo 4 with caption -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="assets/img/4.png" alt="Logo 4" width="100" style="border-bottom: 4px solid black;"/>
+      <div style="font-size: 12px; color: #555;"><i>Current affiliation</i></div>
+    </div>
+  </div>
+</div>
+
+
+
