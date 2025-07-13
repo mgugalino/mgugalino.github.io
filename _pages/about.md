@@ -33,7 +33,7 @@ I invite you to check out the following links to...
 <div style="display: flex; align-items: center; margin: 60px 0 40px 10px;">
   <!-- Left text -->
   <div style="margin-right: 20px; transform: translateY(-10px);">
-    <p style="margin: 0;"><b>Research institutions I was or currently affiliated to:</b></p>
+    <p style="margin: 0;"><b>Affiliated research institutions (past and present):</b></p>
   </div>
 
   <!-- Logos -->
