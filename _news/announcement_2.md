@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will give an invited (online) talk at the first [Philippine Space Science and Astronomy Research Conference](https://www.facebook.com/PSSARC.Official/) (PSSARC) on August 12, 2025.
+I gave an invited (online) talk at the first [Philippine Space Science and Astronomy Research Conference](https://www.facebook.com/PSSARC.Official/) (PSSARC) on August 12, 2025.
