@@ -29,6 +29,11 @@ I invite you to check out the following links to...
 * ...show your support for the queer community in STEM: [https://astro-outlist.github.io/](https://astro-outlist.github.io/), [http://lgbtphysicists.org/](http://lgbtphysicists.org/), [http://lgbtmath.org/](http://lgbtmath.org/)
 * ...learn how you can promote LGBTQ+ inclusivity in STEM: [https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/](https://astrobites.org/2018/05/25/lgbtq-inclusivity-in-astronomy/) 
 
+<br>
+<br>
+<br>
+<br>
+    
 <div style="display: flex; align-items: center; margin: 60px 0 40px 10px;">
   <!-- Left text -->
   <div style="margin-right: 20px; transform: translateY(-10px);">
