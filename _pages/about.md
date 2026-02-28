@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='/cv/'>CV</a>
+subtitle: <a href='/assets/pdf/CurriculumVitaeMIGUgalino.pdf'>CV</a>
 
 profile:
   align: right
@@ -31,40 +31,32 @@ I invite you to check out the following links to...
 <br>
 <br>
 <br>
-    
+
+<!--    
 <div style="display: flex; align-items: center; margin: 60px 0 40px 10px;">
-  <!-- Left text -->
   <div style="margin-right: 20px; transform: translateY(-10px);">
     <p style="margin: 0;"><b>Affiliated research institutions (past and present):</b></p>
   </div>
 
-  <!-- Logos -->
   <div style="display: flex; gap: 10px;">
-    <!-- Logo 1 -->
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="assets/img/1.png" alt="Logo 1" width="100"/>
-      <div style="height: 16px;"></div> <!-- empty space to match caption height -->
+      <div style="height: 16px;"></div> 
     </div>
-
-    <!-- Logo 2 -->
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="assets/img/2.png" alt="Logo 2" width="100"/>
       <div style="height: 16px;"></div>
     </div>
-
-    <!-- Logo 3 -->
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="assets/img/3.png" alt="Logo 3" width="100"/>
       <div style="height: 16px;"></div>
     </div>
-
-    <!-- Logo 4 with caption -->
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="assets/img/4.png" alt="Logo 4" width="100" style="border-bottom: 4px solid black;"/>
       <div style="font-size: 12px; color: #555;"><i>Current affiliation</i></div>
     </div>
   </div>
 </div>
-
+-->
 
 
