@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Physical Sciences Complex</p>
-    <p> Astronomy Dept, PSC 1238 </p>
+    <p> Astronomy Dept, ATL</p>
     <p>4296 Stadium Dr</p>
     <p>College Park, MD, USA 20740</p>
 
