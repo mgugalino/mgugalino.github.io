@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='/assets/pdf/CurriculumVitaeMIGUgalino.pdf'>CV</a>
+subtitle: <a href='/assets/pdf/CurriculumVitaeMIGUgalino.pdf'>CV</a>  <a href='/assets/pdf/CurriculumVitaeMIGUgalino_2pg.pdf'>CV (2 pg)</a>
 
 profile:
   align: right
