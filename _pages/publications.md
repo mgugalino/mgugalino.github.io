@@ -20,27 +20,71 @@ nav_order: 2
 
 <div class="publications">
 
+  <!-- Peer-Reviewed Articles -->
   <section id="articles" class="pub-group">
     <h2>Peer-Reviewed Articles</h2>
-    {% bibliography --query @article and eprint == "" %}
+
+    {% capture count %}{% bibliography_count --query @article and eprint == "" %}{% endcapture %}
+    {% assign count = count | strip | plus: 0 %}
+
+    {% if count > 0 %}
+      {% bibliography --query @article and eprint == "" %}
+    {% else %}
+      <p class="empty-publications">Nothing to see here for now.</p>
+    {% endif %}
   </section>
 
+  <!-- Preprints -->
   <section id="preprints" class="pub-group">
     <h2>Preprints</h2>
-    {% bibliography --query @preprint and eprint != "" %}
+
+    {% capture count %}{% bibliography_count --query @preprint and eprint != "" %}{% endcapture %}
+    {% assign count = count | strip | plus: 0 %}
+
+    {% if count > 0 %}
+      {% bibliography --query @preprint and eprint != "" %}
+    {% else %}
+      <p class="empty-publications">Nothing to see here for now.</p>
+    {% endif %}
   </section>
 
+  <!-- Conference Proceedings -->
   <section id="proceedings" class="pub-group">
     <h2>Conference Proceedings</h2>
-    {% bibliography --query @inproceedings %}
-    {% bibliography --query @incollection %}
+
+    {% capture c1 %}{% bibliography_count --query @inproceedings %}{% endcapture %}
+    {% capture c2 %}{% bibliography_count --query @incollection %}{% endcapture %}
+
+    {% assign total = c1 | strip | plus: 0 %}
+    {% assign total = total | plus: c2 | strip | plus: 0 %}
+
+    {% if total > 0 %}
+      {% bibliography --query @inproceedings %}
+      {% bibliography --query @incollection %}
+    {% else %}
+      <p class="empty-publications">Nothing to see here for now.</p>
+    {% endif %}
   </section>
 
+  <!-- Theses -->
   <section id="theses" class="pub-group">
     <h2>Theses</h2>
-    {% bibliography --query @phdthesis %}
-    {% bibliography --query @masterthesis %}
-    {% bibliography --query @bachelorthesis %}
+
+    {% capture c1 %}{% bibliography_count --query @phdthesis %}{% endcapture %}
+    {% capture c2 %}{% bibliography_count --query @masterthesis %}{% endcapture %}
+    {% capture c3 %}{% bibliography_count --query @bachelorthesis %}{% endcapture %}
+
+    {% assign total = c1 | strip | plus: 0 %}
+    {% assign total = total | plus: c2 | strip | plus: 0 %}
+    {% assign total = total | plus: c3 | strip | plus: 0 %}
+
+    {% if total > 0 %}
+      {% bibliography --query @phdthesis %}
+      {% bibliography --query @masterthesis %}
+      {% bibliography --query @bachelorthesis %}
+    {% else %}
+      <p class="empty-publications">Nothing to see here for now.</p>
+    {% endif %}
   </section>
 
 </div>

@@ -1369,3 +1369,10 @@ ninja-keys::part(ninja-input-wrapper) {
   height: 100%;
   object-fit: cover;
 }
+
+.empty-publications {
+  text-align: center;
+  color: var(--global-text-color-light);
+  font-style: italic;
+  padding: 2rem 0;
+}
