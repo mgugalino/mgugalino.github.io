@@ -10,13 +10,14 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Physical Sciences Complex</p>
-    <p> Astronomy Dept, ATL</p>
+    <p>Astronomy Dept, ATL</p>
     <p>4296 Stadium Dr</p>
     <p>College Park, MD, USA 20740</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+latest_posts: false
 ---
 
 Welcome to my page! I am a [*cishet*](https://dictionary.cambridge.org/us/dictionary/english/cishet) Filipino astrophysicist (pronouns: he/him) in the [Astronomy PhD program](https://www.astro.umd.edu/) at the University of Maryland College Park. I work with Professor [Benedikt Diemer](http://www.benediktdiemer.com/) on large-scale magnetohydrodynamic simulations of galaxy formation. I previously worked with Professor [Robert Fisher](https://sites.google.com/site/fishercompgroup) on large-scale simulations of type Ia supernovae at UMass Dartmouth, and Professor [Ian Vega](https://ianvega.wixsite.com/ianvega) on theoretical astrophysics at the University of the Philippines Diliman. 

@@ -1338,3 +1338,34 @@ ninja-keys::part(ninja-input-wrapper) {
   color: white;
   border-color: var(--global-theme-color);
 }
+
+.project-group {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.project-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--global-divider-color);
+  color: var(--global-text-color);
+}
+
+.projects .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.projects .card-img {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.projects .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
