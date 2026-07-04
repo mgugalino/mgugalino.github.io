@@ -1,0 +1,20 @@
+{% assign pubtype = "other" %}
+
+{% assign proceedings = 'inproceedings,incollection' | split: ',' %}
+{% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+
+{% if entry.type == "article" %}
+
+  {% if entry.journal contains "arXiv" %}
+    {% assign pubtype = "preprint" %}
+  {% else %}
+    {% assign pubtype = "journal" %}
+  {% endif %}
+
+{% elsif proceedings contains entry.type %}
+  {% assign pubtype = "conference" %}
+
+{% elsif thesis contains entry.type %}
+  {% assign pubtype = "thesis" %}
+
+{% endif %}

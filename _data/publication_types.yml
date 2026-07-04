@@ -1,0 +1,14 @@
+journal:
+  color: "#AFC4E8"   # pastel blue
+
+conference:
+  color: "#F7C59A"   # pastel orange
+
+preprint:
+  color: "#F2A6A3"   # pastel coral
+
+thesis:
+  color: "#A9D9D6"   # pastel teal
+
+other:
+  color: "#D3D3D3"   # light neutral gray
