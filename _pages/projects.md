@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: research projects I worked on as a research assistant
+description: I run large-scale simulations of astrophysical objects and run analysis pipelines that transform these data products into synthetic observables that can be compared to real-world measurements.
 nav: true
 nav_order: 3
 display_categories: [Active, Past]

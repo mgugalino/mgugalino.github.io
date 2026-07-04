@@ -17,5 +17,5 @@ In most cases, a Newtonian treatment is enough to describe the behavior of an as
 In this project, we derived expressions for the density perturbations induced by a point perturber in a slightly-eccentric orbit. As an extension of the problem for finite gaseous disks, we also derived expressions for a point perturber moving along a circular orbit immersed in a finite background. 
 
 ### Related publications / presentations
-1. Ugalino, Mark Ivan, and Vega, Michael Francis Ian, "Density perturbations in a collisional fluid induced by a particle on a slightly-eccentric orbit." Proceedings of the Samahang Pisika ng Pilipinas, Jun 2018
-2. Ugalino, Mark Ivan, and Vega, Michael Francis Ian, "Steady-state density perturbations induced by a point mass in a finite cylinder." Proceedings of the Samahang Pisika ng Pilipinas, Jun 2020
+1. **Ugalino** and Vega, "Density perturbations in a collisional fluid induced by a particle on a slightly-eccentric orbit." Proceedings of the Samahang Pisika ng Pilipinas, Jun 2018
+2. **Ugalino** and Vega, "Steady-state density perturbations induced by a point mass in a finite cylinder." Proceedings of the Samahang Pisika ng Pilipinas, Jun 2020
