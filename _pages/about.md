@@ -6,7 +6,7 @@ subtitle: <a href='/assets/pdf/CurriculumVitaeMIGUgalino.pdf'>CV (full version)<
 
 profile:
   align: right
-  image: pic.jpg
+  image: pic.webp
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Physical Sciences Complex</p>
